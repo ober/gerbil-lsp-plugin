@@ -1,0 +1,44 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gerbil-lsp-plugin",
+  "version": "0.1.0",
+  "description": "Gerbil Scheme language server plugin for Claude Code",
+  "owner": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "plugins": [
+    {
+      "name": "gerbil-lsp",
+      "version": "0.1.0",
+      "source": ".",
+      "description": "Gerbil Scheme language server with diagnostics, completion, hover, go-to-definition, references, rename, and formatting",
+      "category": "development",
+      "tags": [
+        "gerbil",
+        "scheme",
+        "lsp",
+        "language-server"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      },
+      "lspServers": {
+        "gerbil": {
+          "command": "gerbil-lsp",
+          "args": [
+            "--stdio"
+          ],
+          "transport": "stdio",
+          "extensionToLanguage": {
+            ".ss": "gerbil"
+          },
+          "initializationOptions": {},
+          "settings": {},
+          "maxRestarts": 3
+        }
+      }
+    }
+  ]
+}

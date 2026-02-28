@@ -1,0 +1,12 @@
+{
+  "name": "gerbil-lsp",
+  "version": "0.1.0",
+  "description": "Gerbil Scheme language server with diagnostics, completion, hover, go-to-definition, references, rename, and formatting",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/ober/gerbil-lsp",
+  "license": "MIT",
+  "keywords": ["gerbil", "scheme", "lsp", "language-server"]
+}

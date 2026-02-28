@@ -1,0 +1,13 @@
+{
+  "gerbil": {
+    "command": "gerbil-lsp",
+    "args": ["--stdio"],
+    "extensionToLanguage": {
+      ".ss": "gerbil"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {},
+    "maxRestarts": 3
+  }
+}
