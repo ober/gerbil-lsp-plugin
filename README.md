@@ -38,7 +38,13 @@ gerbil-lsp --version
 /plugin marketplace add ober/gerbil-lsp-plugin
 ```
 
-### 2. Enable in `~/.claude/settings.json`
+### 2. Install the plugin
+
+```
+claude plugin install gerbil-lsp
+```
+
+### 3. Enable in `~/.claude/settings.json`
 
 Add the following to your `~/.claude/settings.json`:
 
@@ -48,11 +54,11 @@ Add the following to your `~/.claude/settings.json`:
     "ENABLE_LSP_TOOL": "1"
   },
   "enabledPlugins": {
-    "gerbil-lsp-plugin@claude-plugins-official": true
+    "gerbil-lsp@gerbil-lsp-plugin": true
   }
 }
 ```
 
-### 3. Restart Claude Code
+### 4. Restart Claude Code
 
 The LSP server will start automatically when you open `.ss` files.
